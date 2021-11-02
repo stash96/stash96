@@ -1,0 +1,3 @@
+[submodule "app/LOT_AD_production"]
+	path = app/LOT_AD_production
+	url = https://github.com/teamRTM/LOT_AD_production

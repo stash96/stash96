@@ -1,6 +1,7 @@
 from typing import Dict, Optional
 from fastapi import FastAPI
 from pickle import load_pickle
+
 app = FastAPI()
 
 @app.get("/")
@@ -10,6 +11,7 @@ def read_root():
 def load_model(model_path: str):
     # 경로로 모델 오브젝트 return
     model = load_pickle(model_path)
+    # model_path == "/model/latest.pkl"
 
     return model
 
@@ -24,7 +26,6 @@ def classification(input_tuple):
 
     cal_name_list = input_tuple[2]
     
-
     output_tuple = (str, {"causing_component_name": {"":""}})
 
     return output_tuple

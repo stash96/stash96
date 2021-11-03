@@ -5,7 +5,7 @@ services:
     container_name: lot_fast_test
     restart: always
     ports:
-      - 8000:8000
+      - 7000:7000
     environment:
       MYSQL_ROOT_PASSWORD: root
       TZ: Asia/Seoul

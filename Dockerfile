@@ -6,6 +6,8 @@ COPY requirements.txt .
 
 RUN mkdir -p /model
 
+COPY /Users/stash/Desktop/model1.pkl /model
+
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
 EXPOSE 80

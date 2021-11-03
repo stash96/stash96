@@ -124,10 +124,15 @@ def start_logics():
         #DecisionTreeClassifier Model
     # model = load_pickle("./model1.pkl")
     # print(model)
-    # sample = (model, {"부품명예시1번": 0.17527}, ["측정명"])
-    # output = get_output(sample)
-    # print(output)
-    return {"data":model.get_params()}
+
+    # Hmmmmmmm....
+    sample = (model, {"mtbfLabel": 0.17527}, ["mtbfLabel"])
+    output = get_output(sample)
+    print(output)
+    return {"output data": output}
+
+    # Model Checking
+    # return {"data":model.get_params()}
 
 # global model
 # model = myLoad("/model/model1.pkl")

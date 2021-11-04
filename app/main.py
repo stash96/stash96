@@ -1,8 +1,4 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
-from typing import Dict, Optional
-from enum import Enum
-
 from LOT_AD_production.inference import load_pickle
 from LOT_AD_production.inference import get_output
 
@@ -11,10 +7,6 @@ import uvicorn
 from configs import MODEL_PATH
 
 app = FastAPI()
-
-# class mlModel(BaseModel):
-#     modelName: str
-#     modelDescription: Optional[str] = "Default model description."
 
 try:
     model = load_pickle(MODEL_PATH)

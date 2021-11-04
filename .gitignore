@@ -1,3 +1,5 @@
 *.pyc
 app/.DS_Store
 .devcontainer/devcontainer.json
+# 모델은 안올리고
+model1.pkl

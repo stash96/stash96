@@ -6,7 +6,7 @@ COPY requirements.txt .
 
 RUN mkdir -p /model
 
-COPY /model1.pkl /model
+# COPY /model1.pkl /model
 
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
